@@ -1,12 +1,10 @@
-# 🛒 ShopEZ — Full-Stack MERN Ecommerce Application
+# ShopEZ — Full-Stack MERN Ecommerce Application
 
 > India's Smartest Shopping Destination — built with the MERN stack
 
-![MERN](https://img.shields.io/badge/Stack-MERN-green) ![Vite](https://img.shields.io/badge/Frontend-Vite+React-blue) ![Node](https://img.shields.io/badge/Node-18%2B-brightgreen) ![MongoDB](https://img.shields.io/badge/Database-MongoDB-green) ![License](https://img.shields.io/badge/License-MIT-yellow)
-
 ---
 
-## 🖥️ Tech Stack
+## Tech Stack
 
 | Layer    | Technology                                  |
 |----------|---------------------------------------------|
@@ -16,7 +14,7 @@
 | Icons    | react-icons (fi, bi, md)                    |
 | Styling  | Vanilla CSS (Custom Design System)          |
 
-## 🎨 Design System
+## Design System
 
 ShopEZ features a custom-built, modern design identity inspired by platforms like Meesho and Myntra:
 
@@ -28,26 +26,26 @@ ShopEZ features a custom-built, modern design identity inspired by platforms lik
 - **Redesigned Product Cards** — wishlist heart, side-by-side "Add to Cart" + "Buy" buttons, hover zoom
 - **Minimal Footer** — trust badges + social icons in 2 clean rows
 
-## ✨ Features
+## Features
 
 ### User Features
-- 🏠 Home page with split hero banner, Hot Deals panel, circular categories, deals of the day, and top picks
-- 🔍 Product search, filter (category, gender, price range), and sort
-- 📦 Product detail page with image gallery, size selector, and quantity controls
-- 🛒 Cart with quantity controls and price summary (subtotal, discount, total)
-- 💳 Checkout with delivery address form and payment options (COD / UPI / Card)
-- 📋 Order confirmation with delivery estimate
-- 👤 User profile with order history table
-- ❤️ Wishlist toggle on product cards (visual feature)
+- Home page with split hero banner, Hot Deals panel, circular categories, deals of the day, and top picks
+- Product search, filter (category, gender, price range), and sort
+- Product detail page with image gallery, size selector, and quantity controls
+- Cart with quantity controls and price summary (subtotal, discount, total)
+- Checkout with delivery address form and payment options (COD / UPI / Card)
+- Order confirmation with delivery estimate
+- User profile with order history table
+- Wishlist toggle on product cards (visual feature)
 
 ### Admin Features
-- 📊 Dashboard with stats cards (users, products, orders, revenue)
-- 📦 Full product CRUD (add / edit / soft-delete) with modal form
-- 📋 Order status management (placed → processing → shipped → delivered)
-- 👥 User management with delete capability
-- 🖼️ Banner image settings
+- Dashboard with stats cards (users, products, orders, revenue)
+- Full product CRUD (add / edit / soft-delete) with modal form
+- Order status management (placed → processing → shipped → delivered)
+- User management with delete capability
+- Banner image settings
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -78,33 +76,33 @@ The app will be available at:
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:8000
 
-## 🔑 Demo Credentials
+## Demo Credentials
 
 | Role  | Email             | Password  |
 |-------|-------------------|-----------|
 | Admin | admin@shopez.com  | Admin@123 |
 | User  | user@shopez.com   | User@123  |
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Method | Endpoint               | Description          | Auth    |
 |--------|------------------------|----------------------|---------|
 | POST   | /api/auth/register     | Register user        | —       |
 | POST   | /api/auth/login        | Login user           | —       |
-| GET    | /api/auth/me           | Current user         | ✅      |
+| GET    | /api/auth/me           | Current user         | Yes     |
 | GET    | /api/products          | All products         | —       |
 | GET    | /api/products/:id      | Single product       | —       |
 | POST   | /api/products          | Add product          | Admin   |
 | PUT    | /api/products/:id      | Update product       | Admin   |
 | DELETE | /api/products/:id      | Soft-delete product  | Admin   |
-| GET    | /api/cart              | Get cart             | ✅      |
-| POST   | /api/cart              | Add to cart          | ✅      |
-| PUT    | /api/cart/:id          | Update cart item     | ✅      |
-| DELETE | /api/cart/:id          | Remove cart item     | ✅      |
-| DELETE | /api/cart/clear        | Clear cart           | ✅      |
-| POST   | /api/orders            | Place order          | ✅      |
-| GET    | /api/orders/my-orders  | User's orders        | ✅      |
-| GET    | /api/orders/:id        | Single order         | ✅      |
+| GET    | /api/cart              | Get cart             | Yes     |
+| POST   | /api/cart              | Add to cart          | Yes     |
+| PUT    | /api/cart/:id          | Update cart item     | Yes     |
+| DELETE | /api/cart/:id          | Remove cart item     | Yes     |
+| DELETE | /api/cart/clear        | Clear cart           | Yes     |
+| POST   | /api/orders            | Place order          | Yes     |
+| GET    | /api/orders/my-orders  | User's orders        | Yes     |
+| GET    | /api/orders/:id        | Single order         | Yes     |
 | GET    | /api/admin/orders      | All orders           | Admin   |
 | PUT    | /api/admin/orders/:id  | Update order status  | Admin   |
 | GET    | /api/admin/users       | All users            | Admin   |
@@ -113,7 +111,7 @@ The app will be available at:
 | POST   | /api/admin/banner      | Update banner        | Admin   |
 | GET    | /api/admin/banner      | Get banner           | Admin   |
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 shopez/
@@ -142,13 +140,9 @@ shopez/
 └── README.md
 ```
 
-## ⚠️ Known Limitations
+## Known Limitations
 - Payment processing is simulated (no real payment gateway integration)
 - No image upload — products use Unsplash URLs
 - No email verification or password reset flow
 - Wishlist is visual-only (not persisted to database)
 - No real-time inventory tracking
-
-## 📜 License
-
-MIT — Educational project
